@@ -1,0 +1,22 @@
+[
+  {
+    "id": "menu.home",
+    "defaultMessage": "Home"
+  },
+  {
+    "id": "menu.review",
+    "defaultMessage": "Review"
+  },
+  {
+    "id": "menu.admin",
+    "defaultMessage": "Admin"
+  },
+  {
+    "id": "menu.login",
+    "defaultMessage": "Login"
+  },
+  {
+    "id": "menu.logout",
+    "defaultMessage": "Logout"
+  }
+]

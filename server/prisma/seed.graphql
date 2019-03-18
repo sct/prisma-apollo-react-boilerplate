@@ -1,0 +1,23 @@
+mutation {
+  user1: createUser(
+    data: {
+      email: "me@notreal.com"
+      password: "$2b$10$dqyYw5XovLjpmkYNiRDEWuwKaRAvLaG45fnXE5b3KTccKZcRPka2m" # "secret42"
+      name: "Some Person"
+      posts: {
+        create: [
+          {
+            title: "Prototyping at lightspeed with Prisma/Apollo/React"
+            content: "Here is a post about making this fast with this framework!"
+          }
+          {
+            title: "Another post about another thing"
+            content: "Hey you know whats neat? Things are neat! Like this post! Thats a thing!"
+          }
+        ]
+      }
+    }
+  ) {
+    id
+  }
+}

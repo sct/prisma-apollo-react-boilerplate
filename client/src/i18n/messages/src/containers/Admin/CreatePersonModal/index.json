@@ -1,0 +1,30 @@
+[
+  {
+    "id": "admin.person.create.title",
+    "defaultMessage": "Create New Person"
+  },
+  {
+    "id": "admin.person.create.name",
+    "defaultMessage": "Person Name"
+  },
+  {
+    "id": "admin.person.create.name.required",
+    "defaultMessage": "You must provide a person's name!"
+  },
+  {
+    "id": "admin.person.create.department",
+    "defaultMessage": "Department"
+  },
+  {
+    "id": "admin.person.create.department.required",
+    "defaultMessage": "You must select a department!"
+  },
+  {
+    "id": "admin.person.create.department.select",
+    "defaultMessage": "Select a department"
+  },
+  {
+    "id": "admin.person.created",
+    "defaultMessage": "Person {name} added!"
+  }
+]

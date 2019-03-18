@@ -1,0 +1,22 @@
+[
+  {
+    "id": "admin.menu.home",
+    "defaultMessage": "Admin Home"
+  },
+  {
+    "id": "admin.menu.people",
+    "defaultMessage": "Manage People"
+  },
+  {
+    "id": "admin.menu.departments",
+    "defaultMessage": "Manage Departments"
+  },
+  {
+    "id": "admin.menu.tokens",
+    "defaultMessage": "Manage Tokens"
+  },
+  {
+    "id": "admin.title",
+    "defaultMessage": "Administration"
+  }
+]

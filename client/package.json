@@ -1,0 +1,70 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@types/jest": "24.0.11",
+    "@types/node": "11.11.3",
+    "@types/react": "16.8.8",
+    "@types/react-dom": "16.8.2",
+    "apollo-boost": "^0.3.1",
+    "graphql": "^14.1.1",
+    "history": "^4.7.2",
+    "i18next-browser-languagedetector": "^3.0.1",
+    "node-sass": "^4.11.0",
+    "react": "^16.8.4",
+    "react-apollo": "^2.5.2",
+    "react-apollo-hooks": "^0.4.3",
+    "react-dom": "^16.8.4",
+    "react-intl": "^2.8.0",
+    "react-router-dom": "^4.4.0",
+    "react-scripts": "2.1.8",
+    "typescript": "3.3.3333"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@types/lodash": "^4.14.121",
+    "@types/react-intl": "^2.3.17",
+    "@types/react-router-dom": "^4.3.1",
+    "@types/webpack-env": "^1.13.7",
+    "apollo": "^2.5.3",
+    "babel-plugin-react-intl": "^3.0.1",
+    "husky": "^1.3.1",
+    "lint-staged": "^8.1.4",
+    "prettier": "^1.16.4",
+    "react-intl-translations-manager": "^5.0.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "apollo": "apollo",
+    "apollo:codegen": "apollo client:codegen --target typescript",
+    "i18n:extract": "NODE_ENV=production babel 'src/**/*.{tsx, ts}' > /dev/null",
+    "i18n:manage": "node ./translationManager"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "prettier": {
+    "singleQuote": true
+  }
+}

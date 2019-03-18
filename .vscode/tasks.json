@@ -1,0 +1,108 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Restart Prisma Server",
+      "type": "shell",
+      "command": "docker-compose restart prisma",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "Reload Server",
+      "type": "shell",
+      "command": "docker-compose up -d --build server",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "Reload Client",
+      "type": "shell",
+      "command": "docker-compose up -d --build client",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "Prisma Deploy",
+      "type": "shell",
+      "command": "docker-compose exec server npm run prisma -- deploy",
+      "options": {
+        "cwd": "${workspaceRoot}/server"
+      }
+    },
+    {
+      "label": "Prisma Deploy FORCE",
+      "type": "shell",
+      "command": "docker-compose exec server npm run prisma -- deploy --force",
+      "options": {
+        "cwd": "${workspaceRoot}/server"
+      }
+    },
+    {
+      "label": "Prisma Reset",
+      "type": "shell",
+      "command": "docker-compose exec server npm run prisma -- reset --force",
+      "options": {
+        "cwd": "${workspaceRoot}/server"
+      }
+    },
+    {
+      "label": "Prisma Reseed",
+      "type": "shell",
+      "command": "docker-compose exec server npm run prisma -- seed --reset",
+      "options": {
+        "cwd": "${workspaceRoot}/server"
+      }
+    },
+    {
+      "label": "Prisma Generate",
+      "type": "shell",
+      "command": "docker-compose exec server npm run prisma -- generate",
+      "options": {
+        "cwd": "${workspaceRoot}/server"
+      }
+    },
+    {
+      "label": "Generate Static Typing",
+      "type": "shell",
+      "command": "npm run apollo:codegen",
+      "options": {
+        "cwd": "${workspaceRoot}/client"
+      }
+    },
+    {
+      "label": "i18n Extract Translations",
+      "type": "shell",
+      "command": "npm run i18n:extract",
+      "options": {
+        "cwd": "${workspaceRoot}/client"
+      }
+    },
+    {
+      "label": "i18n Manage Translations",
+      "type": "shell",
+      "command": "npm run i18n:manage",
+      "options": {
+        "cwd": "${workspaceRoot}/client"
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "admin.people.total",
+    "defaultMessage": "Total People: {count}"
+  },
+  {
+    "id": "admin.people.message",
+    "defaultMessage": "Manage people who will participate in the next evaluation here"
+  },
+  {
+    "id": "admin.people.create",
+    "defaultMessage": "Create New Person"
+  },
+  {
+    "id": "admin.people.edit",
+    "defaultMessage": "Edit Person"
+  },
+  {
+    "id": "admin.people.import",
+    "defaultMessage": "Import from CSV"
+  },
+  {
+    "id": "admin.people.delete",
+    "defaultMessage": "Remove Person"
+  },
+  {
+    "id": "admin.people.cancel",
+    "defaultMessage": "Cancel"
+  },
+  {
+    "id": "admin.people.delete.message",
+    "defaultMessage": "Are you sure you want to remove this person?"
+  },
+  {
+    "id": "admin.people.deleted",
+    "defaultMessage": "Person {name} removed!"
+  }
+]

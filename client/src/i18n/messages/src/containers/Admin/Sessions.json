@@ -1,0 +1,58 @@
+[
+  {
+    "id": "admin.sessions.title",
+    "defaultMessage": "Session Management"
+  },
+  {
+    "id": "admin.sessions.message",
+    "defaultMessage": "Create and manage sessions here for upcoming evaulations."
+  },
+  {
+    "id": "admin.sessions.cancel",
+    "defaultMessage": "Cancel"
+  },
+  {
+    "id": "admin.sessions.create",
+    "defaultMessage": "Create New Session"
+  },
+  {
+    "id": "admin.sessions.edit",
+    "defaultMessage": "Edit Session"
+  },
+  {
+    "id": "admin.sessions.delete",
+    "defaultMessage": "Delete Session"
+  },
+  {
+    "id": "admin.sessions.delete.message",
+    "defaultMessage": "Are you sure you want to delete this session? All associated votes and tokens will be removed as well!"
+  },
+  {
+    "id": "admin.sessions.table.name",
+    "defaultMessage": "Session Name"
+  },
+  {
+    "id": "admin.sessions.table.votes",
+    "defaultMessage": "Vote Count"
+  },
+  {
+    "id": "admin.sessions.table.departments",
+    "defaultMessage": "Participating Departments"
+  },
+  {
+    "id": "admin.sessions.table.tokens",
+    "defaultMessage": "Token Count"
+  },
+  {
+    "id": "admin.sessions.table.actions",
+    "defaultMessage": "Actions"
+  },
+  {
+    "id": "admin.sessions.created",
+    "defaultMessage": "New session created!"
+  },
+  {
+    "id": "admin.sessions.deleted",
+    "defaultMessage": "Session deleted!"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "admin.token.create.title",
+    "defaultMessage": "Create New Token"
+  },
+  {
+    "id": "admin.token.create.session",
+    "defaultMessage": "Session"
+  },
+  {
+    "id": "admin.token.create.session.required",
+    "defaultMessage": "You must select a session!"
+  },
+  {
+    "id": "admin.token.create.session.select",
+    "defaultMessage": "Select a session"
+  },
+  {
+    "id": "admin.tokens.created",
+    "defaultMessage": "Token [{key}] created!"
+  }
+]

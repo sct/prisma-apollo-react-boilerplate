@@ -1,0 +1,10 @@
+[
+  {
+    "id": "admin.people.total",
+    "defaultMessage": "Total People: {count}"
+  },
+  {
+    "id": "admin.people.message",
+    "defaultMessage": "Manage people who will participate in the next evaluation here"
+  }
+]

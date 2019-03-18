@@ -1,0 +1,22 @@
+[
+  {
+    "id": "admin.departments.total",
+    "defaultMessage": "Total Departments: {count}"
+  },
+  {
+    "id": "admin.departments.message",
+    "defaultMessage": "Manage departments who will participate in the next evaluation here"
+  },
+  {
+    "id": "admin.departments.create",
+    "defaultMessage": "Create New Department"
+  },
+  {
+    "id": "admin.departments.edit",
+    "defaultMessage": "Edit Department"
+  },
+  {
+    "id": "admin.departments.delete",
+    "defaultMessage": "Delete Department"
+  }
+]

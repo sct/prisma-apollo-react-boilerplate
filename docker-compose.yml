@@ -1,0 +1,58 @@
+version: '3'
+services:
+  client:
+    build: client
+    command: sh -c "npm i && npm start"
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./client:/client
+      - /client/node_modules
+    networks:
+      - unext_evaluation
+  server:
+    build: server
+    command: sh -c "npm i && npm start"
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./server:/server
+      - /server/node_modules
+    networks:
+      - unext_evaluation
+    depends_on:
+      - prisma
+  prisma:
+    image: prismagraphql/prisma:1.29-beta
+    restart: always
+    ports:
+      - "4466:4466"
+    networks:
+      - unext_evaluation
+    depends_on:
+      - mysql
+    environment:
+      PRISMA_CONFIG: |
+        port: 4466
+        databases:
+          default:
+            connector: mysql
+            host: mysql
+            port: 3306
+            user: root
+            password: prisma
+            migrations: true
+  mysql:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: prisma
+    volumes:
+      - mysql:/var/lib/mysql
+    networks:
+      - unext_evaluation
+volumes:
+  mysql:
+
+networks:
+  unext_evaluation:

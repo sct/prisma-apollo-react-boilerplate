@@ -1,0 +1,30 @@
+[
+  {
+    "id": "admin.session.create.title",
+    "defaultMessage": "Create New Session"
+  },
+  {
+    "id": "admin.session.create.name",
+    "defaultMessage": "Session Name"
+  },
+  {
+    "id": "admin.session.create.name.required",
+    "defaultMessage": "You must provide a session name!"
+  },
+  {
+    "id": "admin.session.create.department",
+    "defaultMessage": "Participating Departments"
+  },
+  {
+    "id": "admin.session.create.department.required",
+    "defaultMessage": "You must select at least one department!"
+  },
+  {
+    "id": "admin.session.create.department.select",
+    "defaultMessage": "Select participating departments"
+  },
+  {
+    "id": "admin.session.created",
+    "defaultMessage": "Session created!"
+  }
+]

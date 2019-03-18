@@ -1,0 +1,18 @@
+[
+  {
+    "id": "admin.department.create.title",
+    "defaultMessage": "Create New Department"
+  },
+  {
+    "id": "admin.department.create.name",
+    "defaultMessage": "Department Name"
+  },
+  {
+    "id": "admin.department.create.name.required",
+    "defaultMessage": "You must provide a department name!"
+  },
+  {
+    "id": "admin.department.created",
+    "defaultMessage": "Department {name} created!"
+  }
+]
