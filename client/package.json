@@ -17,7 +17,7 @@
     "react-apollo-hooks": "^0.4.3",
     "react-dom": "^16.8.4",
     "react-intl": "^2.8.0",
-    "react-router-dom": "^4.4.0",
+    "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.8",
     "typescript": "3.3.3333"
   },
