@@ -23,7 +23,7 @@ services:
     depends_on:
       - prisma
   prisma:
-    image: prismagraphql/prisma:1.29-beta
+    image: prismagraphql/prisma:1.29
     restart: always
     ports:
       - "4466:4466"
